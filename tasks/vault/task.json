@@ -3,13 +3,13 @@
   "name": "corystein-hashicorp-toolkit-vault-task",
   "friendlyName": "Read Secrets from Hashi Vault",
   "description": "Reads secrets from Hashi Vault and creates Azure DevOps variables",
-  "helpMarkDown": "[More Information, setup...](https://github.com/corystein/ReadHashiVaultSecrets)",
+  "helpMarkDown": "[More Information, setup...](https://github.com/corystein/hashicorp-toolkit-azure-devops-extension)",
   "category": "Utility",
   "author": "Cory Stein",
   "version": {
     "Major": 0,
     "Minor": 0,
-    "Patch": 3
+    "Patch": 4
   },
   "demands": ["azureps"],
   "instanceNameFormat": "Vault Read Secrets (Single Path)",
@@ -20,7 +20,7 @@
       "name": "uri",
       "type": "string",
       "label": "Hashi Vault Uri",
-      "defaultValue": "$(VAULT_URI)",
+      "defaultValue": "",
       "required": true,
       "helpMarkDown": "End point for Hashi Vault instance"
     },
@@ -28,7 +28,7 @@
       "name": "token",
       "type": "string",
       "label": "Hashi Vault Token",
-      "defaultValue": "$(VAULT_TOKEN)",
+      "defaultValue": "",
       "required": true,
       "helpMarkDown": "Hashi Vault authentication token"
     },
